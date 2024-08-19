@@ -8,14 +8,12 @@ Stampiamo in pagina i due tiri e il risultato
 
 //TODO       FASE PREPARATORIA
 //Ricupero gli ellementi della pagina di mio interesse
+const result = document.getElementById('result');
 
 //TODO       FASE DE ELABORAZIONE
 //Generare un numero random da 1 a 6
-const playerNumber = Math.random()*6
-console.log(playerNumber);
-
-const pcNumber = Math.random()*6
-console.log(pcNumber);
+const playerNumber = (Math.random()*5)+1
+const pcNumber = (Math.random()*5)+1
 
 //TODO       CALCOLO
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
@@ -31,3 +29,4 @@ if(playerNumber > pcNumber ){
 console.log(message);
 //TODO       OUTPUT
 //Stampiamo in pagina i due tiri e il risultato
+result.innerText = message
