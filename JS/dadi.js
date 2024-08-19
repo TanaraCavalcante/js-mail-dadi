@@ -30,3 +30,5 @@ console.log(message);
 //TODO       OUTPUT
 //Stampiamo in pagina i due tiri e il risultato
 result.innerText = message
+
+
