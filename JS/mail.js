@@ -12,6 +12,8 @@ Cosa devo controllare esattamente? */
 
 //TODO       FASE PREPARATORIA
 //Ricupero gli ellementi della pagina di mio interesse
+const inputMail = document.getElementById('input-mail')
+const btn = document.getElementById('accedi-btn');
 
 //TODO       FASE DE ELABORAZIONE
 //inventa una lista di email autorizzate
