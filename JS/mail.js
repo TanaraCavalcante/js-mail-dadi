@@ -14,7 +14,8 @@ Cosa devo controllare esattamente? */
 //Ricupero gli ellementi della pagina di mio interesse
 const emailField = document.getElementById('input-email');
 const btn = document.getElementById('accedi-btn');
-const resultElement = document.getElementById('result')
+const resultElement = document.getElementById('result-email');
+const form = document.querySelector('form');
 
 
 //TODO       FASE DE ELABORAZIONE
@@ -22,7 +23,7 @@ const resultElement = document.getElementById('result')
 const allowedEmails = ['tanara@gmail.com','luca@gmail.com','tamyres@gmail.com'];
 
 //TODO       EVENTO
-Form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function(e) {
     e.preventDefault();
 
 //Raccolta dati
@@ -41,13 +42,13 @@ for (let i = 0; i < allowedEmails.length; i++){
     const emailToCheck = allowedEmails[i];
 
     if(email === emailToCheck){
-        isAllowed = true;
+        isAlloewd = true;
     }
 }
 
 //TODO       OUTPUT
 //calcolo qual è il messagio giusto.
-const message = isAllowed ? 'Benvenuto' : 'Accesso negato'
+const message = isAlloewd? 'Benvenuto' : 'Accesso negato'
 
 //stampa un messaggio appropriato sull’esito del controllo.
 resultElement.innerText = message;
