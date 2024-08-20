@@ -12,8 +12,8 @@ const result = document.getElementById('result');
 
 //TODO       FASE DE ELABORAZIONE
 //Generare un numero random da 1 a 6
-const playerNumber = (Math.random()*5)+1
-const pcNumber = (Math.random()*5)+1
+const playerNumber = Math.floor(Math.random()*6)+1;
+const pcNumber = Math.floor(Math.random()*6)+1;
 
 //TODO       CALCOLO
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
