@@ -12,16 +12,20 @@ Cosa devo controllare esattamente? */
 
 //TODO       FASE PREPARATORIA
 //Ricupero gli ellementi della pagina di mio interesse
-const inputMail = document.getElementById('input-mail')
+const inputMail = document.getElementById('input-mail');
 const btn = document.getElementById('accedi-btn');
 
 //TODO       FASE DE ELABORAZIONE
 //inventa una lista di email autorizzate
+const emails = [];
 
 //Chiedi all’utente la sua email, con un piccolo form.
+let mail = inputName.value.trim();
+emails.push(mail);
 
 //TODO       CONTROLLO
 //controlla che sia nella lista di chi può accedere.
+
 
 //TODO       OUTPUT
 //stampa un messaggio appropriato sull’esito del controllo.
